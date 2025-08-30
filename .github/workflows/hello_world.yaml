@@ -9,6 +9,15 @@ on:
 jobs:
   greetings:
     runs-on: ubuntu-latest
-    steps:
+    steps: 
       - id: s01
-        run: echo "Current date and time: $(date)"
+        run: echo "Current date and time $(date)"
+      - id: s02
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+          text: 'ship ship ship!'
+          color: 'red'       
+    #   - id: s02
+    #     run: cat hello.txt
+    #   - id: s03
+    #     run: ls -al
