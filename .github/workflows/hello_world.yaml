@@ -1,12 +1,9 @@
-###
-#
-###
 # name
 name: hello_world
 
 # trigger
 on:
-- push
+- push:
 
 # one or more jobs
 jobs:
