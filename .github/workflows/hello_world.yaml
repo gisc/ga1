@@ -3,13 +3,12 @@ name: hello_world
 
 # trigger
 on:
-- push:
+  push:
 
 # one or more jobs
 jobs:
-    greetings:
-        runs-on: ubuntu-latest
-        steps:
-        - id: s01
-          # run some shell bash command
-          run: echo "Current date and time: $(date)"
+  greetings:
+    runs-on: ubuntu-latest
+    steps:
+      - id: s01
+        run: echo "Current date and time: $(date)"
