@@ -17,7 +17,7 @@ jobs:
       - id: s03
         uses: mscoutermarsh/cowsays-action@master
         with:
-          text: 'ship ship ship! ${{ steps.s02.outputs.CURR_DATE }}'
+          text: 'ship ship ship! ${{ steps.s02.outputs.CURR_DATE }}, ${{github.ref }}, ${{ github.repository }}, ${{ github.actor }}'
           color: red     
     #   - id: s02
     #     run: cat hello.txt
